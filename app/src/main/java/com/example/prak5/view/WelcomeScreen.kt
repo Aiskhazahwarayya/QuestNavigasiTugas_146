@@ -41,5 +41,20 @@ fun WelcomeScreen(
                 textAlign = TextAlign.Center
             )
         }
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.Center
+        ) {
+            Text(
+                text = "CARD-LST",
+                fontSize = 36.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorDeepPurple,
+                letterSpacing = 2.sp
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+
+        }
     }
 }
