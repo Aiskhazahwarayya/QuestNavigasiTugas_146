@@ -57,7 +57,7 @@ fun TampilData(
                 )
             )
         }
-    ){ paddingValues ->
+    ) { paddingValues ->
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -118,6 +118,63 @@ fun TampilData(
                         )
                         Text(
                             text = jenisKelamin,
+                            fontSize = 20.sp,
+                            fontWeight = FontWeight.Normal,
+                            fontFamily = FontFamily.Cursive,
+                            color = Color.Black,
+                            modifier = Modifier.padding(top = 4.dp)
+                        )
+                    }
+                }
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 12.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = LightPurple
+                    ),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(16.dp)
+                    ) {
+                        Text(
+                            text = "STATUS PERKAWINAN",
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Normal,
+                            color = Color.Gray
+                        )
+                        Text(
+                            text = statusPerkawinan,
+                            fontSize = 20.sp,
+                            fontWeight = FontWeight.Normal,
+                            fontFamily = FontFamily.Cursive,
+                            color = Color.Black,
+                            modifier = Modifier.padding(top = 4.dp)
+                        )
+                    }
+                }
+
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 16.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = LightPurple
+                    ),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(16.dp)
+                    ) {
+                        Text(
+                            text = "ALAMAT",
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Normal,
+                            color = Color.Gray
+                        )
+                        Text(
+                            text = alamat,
                             fontSize = 20.sp,
                             fontWeight = FontWeight.Normal,
                             fontFamily = FontFamily.Cursive,
