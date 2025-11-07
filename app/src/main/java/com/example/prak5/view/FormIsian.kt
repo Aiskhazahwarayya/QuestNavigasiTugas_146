@@ -199,8 +199,7 @@ fun FormPendaftaran(
                     confirmButton = {
                         TextButton(
                             onClick = {
-                                showDialog = false // tutup dialog
-                                // navigasi ke TampilData setelah dialog ditutup
+                                showDialog = false
                                 onSubmitClick()
 
                             }
