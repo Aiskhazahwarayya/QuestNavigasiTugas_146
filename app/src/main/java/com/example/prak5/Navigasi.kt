@@ -7,7 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.cn.view.WelcomeScreen
+import com.example.prak5.view.WelcomeScreen
 import com.example.prak5.view.FormPendaftaran
 import com.example.prak5.view.TampilData
 
