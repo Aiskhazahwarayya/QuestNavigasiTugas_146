@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.cn.view.WelcomeScreen
 import com.example.prak5.view.FormPendaftaran
 import com.example.prak5.view.TampilData
@@ -59,5 +60,35 @@ fun DataApp(
                 }
             )
         }
+        composable(
+            route = "${Halaman.TampilData.name}/{nama}/{jk}/{status}/{alamat}",
+            arguments = listOf(
+                navArgument("nama") { defaultValue = "-" },
+                navArgument("jk") { defaultValue = "-" },
+                navArgument("status") { defaultValue = "-" },
+                navArgument("alamat") { defaultValue = "-" }
+            )
+        ) { backStackEntry ->
+            val nama = backStackEntry.arguments?.getString("nama") ?: "-"
+            val jk = backStackEntry.arguments?.getString("jk") ?: "-"
+            val status = backStackEntry.arguments?.getString("status") ?: "-"
+            val alamat = backStackEntry.arguments?.getString("alamat") ?: "-"
+
+            TampilData(
+                namaLengkap = nama,
+                jenisKelamin = jk,
+                statusPerkawinan = status,
+                alamat = alamat,
+                onBerandaClick = {
+                    navController.navigate(Halaman.Welcome.name) {
+                        popUpTo(Halaman.Welcome.name) { inclusive = true }
+                    }
+                },
+                onFormulirClick = {
+                    navController.navigate(Halaman.FormPendaftaran.name)
+                }
+            )
+        }
+
     }
 }
