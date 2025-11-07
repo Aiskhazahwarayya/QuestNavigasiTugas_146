@@ -7,6 +7,7 @@ import androidx.compose.foundation.content.MediaType.Companion.Text
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -150,6 +151,21 @@ fun FormPendaftaran(
                         Text(text = item)
                     }
                 }
+                Text(
+                    text = "ALAMAT",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.SemiBold
+                )
+                OutlinedTextField(
+                    value = textAlamat,
+                    onValueChange = { textAlamat = it },
+                    placeholder = { Text("Alamat lengkap") },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(60.dp)
+                )
+                Spacer(modifier= Modifier.height(16.dp))
+
 
             }
         }
