@@ -55,6 +55,28 @@ fun WelcomeScreen(
             )
             Spacer(modifier = Modifier.height(8.dp))
 
+            Text(
+                text = "🪐",
+                fontSize = 80.sp,
+                modifier = Modifier.padding(vertical = 16.dp)
+            )
+
+            Text(
+                text = "MOBILE APP",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Normal,
+                color = colorPurple700,
+                letterSpacing = 1.sp
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Text(
+                text = "2025",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorDeepPurple
+            )
         }
     }
 }
