@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Prak5</string>
+    <string name="submit">Submit</string>
+    <string name="beranda">Beranda</string>
+    <string name="formulir_pendaftaran">Formulir Pendaftaran</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="status_perkawinan">STATUS PERKAWINAN</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="list_daftar_peserta">List Daftar Peserta</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="mobile_app">MOBILE APP</string>
+    <string name="tahun">2025</string>
+    <string name="isian_nama">Isian nama lengkap</string>
+    <string name="isian_alamat">Alamat</string>
+    <string name="home">Form Isian</string>
+    <string name="back">Back</string>
+    <string name="tampil">Tampilan</string>
 </resources>
