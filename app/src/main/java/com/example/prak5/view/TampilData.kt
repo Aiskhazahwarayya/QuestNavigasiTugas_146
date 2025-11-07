@@ -165,8 +165,6 @@ fun TampilData(
                         color = DeepPurple
                     )
                 }
-
-
             }
         }
     }
